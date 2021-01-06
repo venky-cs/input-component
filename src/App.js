@@ -13,9 +13,6 @@ line-height:36px;
 
 const Label = styled.label`
 padding:5px 0;
-&:focus{
-  color:blue
-}
 `
 
 const Row = styled.div`
@@ -34,11 +31,29 @@ function App() {
       <Row>
         <p>{'<Input />'}</p>
         <Flex>
-        <Label>Label</Label>
-        <Input placeholder="Placeholder"></Input>
+          <Label>Label</Label>
+          <Input placeholder="Placeholder" type="default"></Input>
         </Flex>
       </Row>
-      <br/>
+      <br />
+
+      <Row>
+        <p>{'<Input error/>'}</p>
+        <Flex>
+          <Label>Label</Label>
+          <Input placeholder="Placeholder" type='error'></Input>
+        </Flex>
+      </Row>
+      <br />
+
+      <Row>
+        <p>{'<Input disabled/>'}</p>
+        <Flex>
+          <Label>Label</Label>
+          <Input placeholder="Placeholder" type='disabled'></Input>
+        </Flex>
+      </Row>
+      <br />
     </div>
   );
 }
