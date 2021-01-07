@@ -21,7 +21,11 @@ margin-left:10%;`
 const Flex = styled.div`
 display:flex;
 flex-direction:column;
+padding-right:100px;
 
+`
+const Flexr =styled.div`
+display:flex;
 `
 
 function App() {
@@ -30,7 +34,7 @@ function App() {
       <Heading>Inputs</Heading>
       <Row>
         <p>{'<Input />'}</p>
-        <Flex>
+        <Flex className="primary">
           <Label>Label</Label>
           <Input placeholder="Placeholder" type="default"></Input>
         </Flex>
@@ -39,7 +43,7 @@ function App() {
 
       <Row>
         <p>{'<Input error/>'}</p>
-        <Flex>
+        <Flex className="errorf">
           <Label>Label</Label>
           <Input placeholder="Placeholder" type='error'></Input>
         </Flex>
@@ -52,6 +56,26 @@ function App() {
           <Label>Label</Label>
           <Input placeholder="Placeholder" type='disabled'></Input>
         </Flex>
+      </Row>
+      <br />
+
+      <Row>
+        <Flexr>
+        <Flex>
+        <p>{'<Input helperText="Some interesting text"/>'}</p>
+          <Label>Label</Label>
+          <Input placeholder="Placeholder" type='title'></Input>
+          <p>Some interesting text</p>
+        </Flex>
+          <Flex>
+        <p>{'<Input helperText="Some interesting text"/>'}</p>
+          <Flex className="error">
+          <Label>Label</Label>
+          <Input placeholder="Placeholder" type='title-error'></Input>
+          <p>Some interesting text</p>
+          </Flex>
+        </Flex>
+        </Flexr>
       </Row>
       <br />
     </div>

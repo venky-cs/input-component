@@ -50,7 +50,25 @@ ${props => () => {
             cursor:default;
             `
         }
+
+        if(props.type == 'title'){
+            return `
+            border:2px solid grey;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+        }
+        if(props.type == 'title-error'){
+            return `
+            border:2px solid red;
+             &:hover{
+            border:2px solid red;
+              }
+            `
+        }
     }}
+    
 `
 
 

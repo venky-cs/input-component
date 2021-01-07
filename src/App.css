@@ -8,3 +8,12 @@
   width: 70%;
   margin: 0 auto;
 }
+.primary:focus-within {
+  color:blue;
+}
+.error{
+  color:red;
+}
+.errorf:focus-within{
+  color:red;
+}
