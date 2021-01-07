@@ -67,6 +67,53 @@ ${props => () => {
               }
             `
         }
+        if(props.type == 'title-start'){
+            return `
+            border:2px solid grey;
+            padding-left:30px;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+        }
+        if(props.type == 'title-end'){
+            return `
+            border:2px solid grey;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+        }
+    if (props.size == 'sm') {
+        return `
+            border:2px solid grey;
+            width:130px;
+            height:40px;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+    }
+    if (props.size == 'md') {
+        return `
+            border:2px solid grey;
+            width:180px;
+            height:60px;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+    }
+
+    if (props.size == 'full') {
+        return `
+            border:2px solid grey;
+            width:100%;
+             &:hover{
+            border:2px solid grey;
+              }
+            `
+    }
     }}
     
 `

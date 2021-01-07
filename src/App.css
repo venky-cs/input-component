@@ -17,3 +17,29 @@
 .errorf:focus-within{
   color:red;
 }
+
+.position{
+  position: absolute;
+}
+.icon-start{
+  position: relative;
+  top: 65px;
+  left: 5px;
+}
+.icon-end{
+  position:relative;
+  top:45px;
+  left: 100px;
+}
+
+textarea{
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 250px;
+}
+
+footer p{
+  text-align: center;
+  padding: 20px;
+}
