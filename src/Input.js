@@ -16,7 +16,7 @@ border:none;
 
 ${props => () => {
 
-    if (props.type == 'default') {
+    if (props.type === 'default') {
         return `
         border:2px solid grey;
 
@@ -30,7 +30,7 @@ ${props => () => {
            }
         `
     }
-        if (props.type == 'error') {
+        if (props.type === 'error') {
             return `
         border:2px solid red;
 
@@ -43,7 +43,7 @@ ${props => () => {
         `
         }
 
-        if(props.type == 'disabled'){
+        if(props.type === 'disabled'){
             return `
             border:none;
             background-color:lightgrey;
@@ -51,7 +51,7 @@ ${props => () => {
             `
         }
 
-        if(props.type == 'title'){
+        if(props.type === 'title'){
             return `
             border:2px solid grey;
              &:hover{
@@ -59,7 +59,7 @@ ${props => () => {
               }
             `
         }
-        if(props.type == 'title-error'){
+        if(props.type === 'title-error'){
             return `
             border:2px solid red;
              &:hover{
@@ -67,7 +67,7 @@ ${props => () => {
               }
             `
         }
-        if(props.type == 'title-start'){
+        if(props.type === 'title-start'){
             return `
             border:2px solid grey;
             padding-left:30px;
@@ -76,7 +76,7 @@ ${props => () => {
               }
             `
         }
-        if(props.type == 'title-end'){
+        if(props.type === 'title-end'){
             return `
             border:2px solid grey;
              &:hover{
@@ -84,7 +84,7 @@ ${props => () => {
               }
             `
         }
-    if (props.size == 'sm') {
+    if (props.size === 'sm') {
         return `
             border:2px solid grey;
             width:130px;
@@ -94,7 +94,7 @@ ${props => () => {
               }
             `
     }
-    if (props.size == 'md') {
+    if (props.size === 'md') {
         return `
             border:2px solid grey;
             width:180px;
@@ -105,7 +105,7 @@ ${props => () => {
             `
     }
 
-    if (props.size == 'full') {
+    if (props.size === 'full') {
         return `
             border:2px solid grey;
             width:100%;
