@@ -48,6 +48,7 @@ ${props => () => {
             border:none;
             background-color:lightgrey;
             cursor:default;
+            pointer-events:none;
             `
         }
 
