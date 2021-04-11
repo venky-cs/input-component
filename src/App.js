@@ -26,7 +26,7 @@ flex-direction:column;
 padding-right:100px;
 
 `
-const Flexr =styled.div`
+const FlexRow =styled.div`
 display:flex;
 `
 
@@ -45,7 +45,7 @@ function App() {
 
       <Row>
         <p>{'<Input error/>'}</p>
-        <Flex className="errorf">
+        <Flex className="errorFocus">
           <Label>Label</Label>
           <Input placeholder="Placeholder" type='error'></Input>
         </Flex>
@@ -62,7 +62,7 @@ function App() {
       <br />
 
       <Row>
-        <Flexr>
+        <FlexRow>
         <Flex>
         <p>{'<Input helperText="Some interesting text"/>'}</p>
           <Label>Label</Label>
@@ -77,13 +77,13 @@ function App() {
           <p>Some interesting text</p>
           </Flex>
         </Flex>
-        </Flexr>
+        </FlexRow>
       </Row>
       <br />
 
 
       <Row>
-        <Flexr>
+        <FlexRow>
           <Flex>
             <p>{'<Input startIcon/>'}</p>
             <Label>Label</Label>
@@ -102,7 +102,7 @@ function App() {
               <Input placeholder="Placeholder" type='title-end'></Input>
             </Flex>
           </Flex>
-        </Flexr>
+        </FlexRow>
       </Row>
       <br />
 
@@ -116,7 +116,7 @@ function App() {
       <br />
 
       <Row>
-        <Flexr>
+        <FlexRow>
           <Flex>
             <p>{'<Input size="sm"/>'}</p>
             <Label>Label</Label>
@@ -129,7 +129,7 @@ function App() {
               <Input placeholder="Placeholder" size='md'></Input>
             </Flex>
           </Flex>
-        </Flexr>
+        </FlexRow>
       </Row>
       <br />
 

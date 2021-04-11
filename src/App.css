@@ -14,7 +14,7 @@
 .error{
   color:red;
 }
-.errorf:focus-within{
+.errorFocus:focus-within{
   color:red;
 }
 
